@@ -5,8 +5,8 @@ countDown();
             }
             let activityText = document.querySelector('#activityText');
             let timer = null;
-            const startTime = new Date('2024-2-29 00:00:00');
-            const endTime = new Date('2024-3-19 23:59:59');
+            const startTime = new Date('2024-2-27 00:00:00');
+            const endTime = new Date('2024-3-3 23:59:59');
             const nowTime = new Date();
             const beginDiff = parseInt((startTime.getTime() - nowTime.getTime()) / 1000);
             const endDiff = parseInt((endTime.getTime() - nowTime.getTime()) / 1000);
@@ -23,11 +23,11 @@ countDown();
             if (beginDiff > 0) {
                 activityText.innerHTML =
                 `
-                <div style="display:flex;justify-content:space-evenly;text-align:center;font-size:18px;font-family:Helvetica;font-weight:bold;">
-                <div><div style="width:50px;height:50px;line-height:50px;background-color:green;border-radius:20px;margin:0 auto;">${day}</div>Days</div>
-                <div><div style="width:50px;height:50px;line-height:50px;;background-color:green;border-radius:20px;margin:0 auto;">${hour}</div>Hours</div>
-                <div><div style="width:50px;height:50px;line-height:50px;;background-color:green;border-radius:20px;margin:0 auto;">${minute}</div>Minutes</div>
-                <div><div style="width:50px;height:50px;line-height:50px;;background-color:green;border-radius:20px;margin:0 auto;">${second}</div>Seconds</div>
+                <div style="display:flex;justify-content:space-evenly;text-align:center;font-size:18px;font-family:Helvetica;">
+                <div><div style="width:50px;height:50px;line-height:50px;background-color:lightgray;border-radius:20px;margin:0 auto;">${day}</div>Days</div>
+                <div><div style="width:50px;height:50px;line-height:50px;;background-color:lightgray;border-radius:20px;margin:0 auto;">${hour}</div>Hours</div>
+                <div><div style="width:50px;height:50px;line-height:50px;;background-color:lightgray;border-radius:20px;margin:0 auto;">${minute}</div>Minutes</div>
+                <div><div style="width:50px;height:50px;line-height:50px;;background-color:lightgray;border-radius:20px;margin:0 auto;">${second}</div>Seconds</div>
                 </div>
                 `;
                 timer = setTimeout(countDown, 1000);
@@ -37,11 +37,11 @@ countDown();
             } else {
                 activityText.innerHTML =
                 `
-                <div style="display:flex;justify-content:space-evenly;text-align:center;font-size:21px;font-family:Helvetica;font-weight:bold;">
-                <div><div style="width:50px;height:50px;line-height:50px;background-color:green;border-radius:20px;margin:0 auto;">${day}</div>Days</div>
-                <div><div style="width:50px;height:50px;line-height:50px;background-color:green;border-radius:20px;margin:0 auto;">${hour}</div>Hours</div>
-                <div><div style="width:50px;height:50px;line-height:50px;background-color:green;border-radius:20px;margin:0 auto;">${minute}</div>Minutes</div>
-                <div><div style="width:50px;height:50px;line-height:50px;background-color:green;border-radius:20px;margin:0 auto;">${second}</div>Seconds</div>
+                <div style="display:flex;justify-content:space-evenly;text-align:center;font-size:21px;font-family:Helvetica;">
+                <div><div style="width:50px;height:50px;line-height:50px;background-color:lightgray;border-radius:20px;margin:0 auto;">${day}</div>Days</div>
+                <div><div style="width:50px;height:50px;line-height:50px;background-color:lightgray;border-radius:20px;margin:0 auto;">${hour}</div>Hours</div>
+                <div><div style="width:50px;height:50px;line-height:50px;background-color:lightgray;border-radius:20px;margin:0 auto;">${minute}</div>Minutes</div>
+                <div><div style="width:50px;height:50px;line-height:50px;background-color:lightgray;border-radius:20px;margin:0 auto;">${second}</div>Seconds</div>
                 </div>
                 `;
                 timer = setTimeout(countDown, 1000);
