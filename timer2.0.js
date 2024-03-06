@@ -5,8 +5,8 @@ countDown();
             }
             let activityText = document.querySelector('#activityText');
             let timer = null;
-            const startTime = new Date('2024-2-27 00:00:00');
-            const endTime = new Date('2024-3-3 23:59:59');
+            const startTime = new Date('2024-3-6 00:00:00');
+            const endTime = new Date('2024-3-11 23:59:59');
             const nowTime = new Date();
             const beginDiff = parseInt((startTime.getTime() - nowTime.getTime()) / 1000);
             const endDiff = parseInt((endTime.getTime() - nowTime.getTime()) / 1000);
@@ -32,7 +32,7 @@ countDown();
                 `;
                 timer = setTimeout(countDown, 1000);
             } else if (leftTime <= 0) {
-                activityText.innerText = '活动已结束！更多优惠请在线咨询';
+                activityText.innerText = 'Time Ended';
                 clearTimeout(timer);
             } else {
                 activityText.innerHTML =
